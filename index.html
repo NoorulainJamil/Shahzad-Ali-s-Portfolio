@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="SEO Expert, Semantic SEO, Topical Authority, Content Strategy">
+<meta name="author" content="Shahzad Ali">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahzad Ali - Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 20;
+            font-family: Arial, 'Arial Rounded MT';
+            scroll-behavior: smooth;
+            background: black;
+            color: white;
+            padding: 80 20px;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 0px 0;
+            background-color: black;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            Color: black;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+            color: black;
+        }
+
+        .navbar a {
+            background-color: #444;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: dodgerblue;
+            color: white;
+        }
+
+        .jumbotron {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .jumbotron h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .sub-heading {
+            color: #007bff;
+            font-size: 6rem;
+            font-weight: bold;
+        }
+
+        .jumbotron p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .jumbotron .btn {
+            background-color: #444;
+            color: white !important;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 1s;
+        }
+
+        .jumbotron .btn:hover {
+            background-color: dodgerblue;
+        }
+
+        .stats-section {
+            margin-top: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .stats-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 40px 60px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            text-align: center;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+        }
+
+        .stat {
+            margin: 20px 0;
+        }
+
+        .stat h2 {
+            font-size: 32px;
+            color: blue;
+            margin: 0;
+        }
+
+        .stat p {
+            font-size: 14px;
+            color: white;
+            margin-top: 5px;
+        }
+
+        .hidden {
+            opacity: 0;
+            transform: translateY(50px) scale(0.95);
+        }
+
+        .show {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
+        .btn {
+            font-size: 1rem;
+            color: white;
+            border: 2px solid blue;
+            display: inline-block;
+            padding: 5px 5px;
+            border-radius: 5px;
+        }
+
+        .ticker-wrapper {
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 40px 0;
+        }
+
+        .ticker span {
+            display: inline-block;
+            padding-left: 10%;
+            animation: scrollText 25s linear infinite;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .sep {
+            margin: 0 10px;
+            color: #888;
+        }
+
+        @keyframes scrollText {
+            0% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .service-box p {
+            font-size: 16px;
+        }
+
+        #contact h3 {
+            font-size: 40px;
+        }
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            .navbar {
+                padding: 15px;
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+            }
+
+            .nav-list {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                margin: 0;
+                padding: 0;
+            }
+
+           
+
+            .navbar {
+                padding: 15px;
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+            }
+
+            .nav-list {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                margin: 0;
+                padding: 0;
+            }
+
+            .nav-btn {
+                padding: 10px 20px;
+                background: #444;
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+                transition: 0.3s;
+            }
+
+            .nav-btn:hover {
+                background: #007bff;
+            }
+
+            section {
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                background: black;
+                font-size: 30px;
+                margin-bottom: 500px;
+                color: white;
+            }
+
+                section h2 {
+                    color: #007bff;
+                    font-size: 6rem;
+                    font-weight: bold;
+                    font-display: fallback;
+                }
+                footer{
+                    text-align:center;
+                    padding:20px; 
+                    background:#111;
+                }
+                
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" style="background-color: black !important; margin-bottom: 20px;">
+
+            <div class="container">
+
+                <!-- Brand and toggle -->
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="/#about" class="nav-btn">Shahzad Ali</a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="/#contact" class="nav-btn">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Navigation links -->
+                <div class="navbar-collapse collapse">
+
+
+
+
+                </div>
+
+            </div>
+        </nav>
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a class="nav-btn" href="#home">Home</a></li>
+                <li><a class="nav-btn" href="#stats">Stats</a></li>
+                <li><a class="nav-btn" href="#about">About</a></li>
+                <li><a class="nav-btn" href="#services">Services</a></li>
+                <li><a class="nav-btn" href="#experience">Experience</a></li>
+                <li><a class="nav-btn" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <meta name="description"
+            content="Shahzad Ali - Semantic SEO Expert helping websites rank higher using search intent and topic relevance." />
+        <!-- Main Content -->
+        <div class="container body-content">
+            <hr />
+        </div>
+
+    </header>
+
+    <main>
+        <div id="home" class="jumbotron text-center" style="background-color: black !important;">
+            <h1>The Semantic SEO</h1>
+            <h2 class="sub-heading">Authority Builder</h2>
+            <hr />
+
+            <p class="lead">
+                We know what clicks algorithm and the customer's taste buds.
+            </p>
+            <p class="lead">
+                Entity-driven toical maps. NLP-precision content briefs, and content architecture that builds permanent,
+                measureable topical authority across competitive niches.
+            </p>
+            <p>
+                <a href="#about" class="btn btn-primary btn-lg">Learn more</a>
+                <a href="#stats" class="btn btn-primary btn-lg">View Stats</a>
+            </p>
+        </div>
+
+        <section id="stats" class="stats-section">
+            <div class="stats-card">
+                <div class="stat">
+                    <h2>1+</h2>
+                    <p>Year Specialized</p>
+                </div>
+
+                <div class="stat">
+                    <h2>50+</h2>
+                    <p>Projects</p>
+                </div>
+
+                <div class="stat">
+                    <h2>4</h2>
+                    <p>Core Services</p>
+                </div>
+
+                <div class="stat">
+                    <h2>3</h2>
+                    <p>Niches</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>Write your about content here...</p>
+            <!-- Rotating Line -->
+            <div class="ticker-wrapper">
+                <div class="ticker">
+                    <span>
+                        SEO Strategy<span class="sep">|</span>
+                        Topical Map<span class="sep">|</span>
+                        Content Brief<span class="sep">|</span>
+                        Content Writing<span class="sep">|</span>
+                        Content Config<span class="sep">|</span>
+
+                        SEO Strategy<span class="sep">|</span>
+                        Topical Map<span class="sep">|</span>
+                        Content Brief<span class="sep">|</span>
+                        Content Writing<span class="sep">|</span>
+                        Content Config
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section" style="background-color:black; color:white; padding:50px 0;">
+
+            <h2 class="text-center">Core Services</h2>
+
+            <!-- Services Grid -->
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6 service-box">
+                        <h3>SEO Strategy</h3>
+                        <p>End-to-end semantic strategy from architecture to content - every decision backed by entity
+                            relationships and intent data.</p>
+                    </div>
+
+                    <div class="col-md-6 service-box">
+                        <h3>Topical Map</h3>
+                        <p>Complete authority blueprints mapping every entity, attribute, and query cluster your site
+                            must own.</p>
+                    </div>
+
+                    <div class="col-md-6 service-box">
+                        <h3>Content Brief</h3>
+                        <p>NLP-driven briefs with contextual vectors and structured heading hierarchies.</p>
+                    </div>
+
+                    <div class="col-md-6 service-box">
+                        <h3>Content Writing</h3>
+                        <p>Long-form content with zero fluff and strong semantic precision.</p>
+                    </div>
+
+                    <div class="col-md-6 service-box">
+                        <h3>Content Config</h3>
+                        <p>Post-publish optimization using GSC data and internal linking improvements.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section id="experience" class="section">
+            <h2>Experience</h2>
+            <p>Your experience details here...</p>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <h3>Ready to own your Niche?</h3>
+            <p>Let's build a semantic content strategy that makes your site the most trusted source in your niche.</p>
+
+            <address>
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    Email: <a href="mailto:shahzad.semanticseo@gmail.com">shahzad.semanticseo@gmail.com</a>
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    Phone: <a href="tel:+923091144994">+92 309 114 4994</a>
+                </p>
+            </address>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <!-- Navbar -->
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const sections = document.querySelectorAll('.section');
+
+                const observer = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('show');
+                            entry.target.classList.remove('hidden');
+                            observer.unobserve(entry.target); // animate once
+                        }
+                    });
+                }, { threshold: 0.25 }); // triggers when 25% of section is visible
+
+                sections.forEach(section => observer.observe(section));
+            });
+        </script>
+        <footer>
+    <p>© 2026 Shahzad Ali | Semantic SEO Expert</p>
+</footer>
+    </main>
+
+</body>
+
+</html>
