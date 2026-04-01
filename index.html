@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="SEO Expert, Semantic SEO, Topical Authority, Content Strategy">
-<meta name="author" content="Shahzad Ali">
+    <meta name="author" content="Shahzad Ali">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shahzad Ali - Portfolio Website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <style>
+        :root {
+            --primary: #007bff;
+        }
+
         body {
-            margin: 20;
+            margin: 60;
             font-family: Arial, 'Arial Rounded MT';
             scroll-behavior: smooth;
             background: black;
@@ -54,7 +58,7 @@
         }
 
         .navbar a:hover {
-            background-color: dodgerblue;
+            background-color: var(--primary);
             color: white;
         }
 
@@ -72,7 +76,7 @@
         }
 
         .sub-heading {
-            color: #007bff;
+            color: var(--primary);
             font-size: 7rem;
             font-weight: bold;
         }
@@ -95,7 +99,7 @@
         }
 
         .jumbotron .btn:hover {
-            background-color: dodgerblue;
+            background-color: var(--primary);
             border: none !important;
         }
 
@@ -108,18 +112,18 @@
         }
 
         .stats-card {
-    background: rgba(255, 255, 255, 0.05);
-    padding: 30px 50px;
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
-    text-align: center;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
-    display: flex;              
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;                
-    flex-wrap: wrap;          
-}
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px 50px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            text-align: center;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
 
         .stat {
             margin: 20px 0;
@@ -128,7 +132,7 @@
 
         .stat h2 {
             font-size: 50px;
-            color: blue;
+            color: var(--primary);
             margin: 0;
         }
 
@@ -151,7 +155,7 @@
         .btn {
             font-size: 1.5rem;
             color: white;
-            border: 2px solid blue;
+            border: 2px solid var(--primary);
             display: inline-block;
             padding: 5px 5px;
             border-radius: 5px;
@@ -160,13 +164,13 @@
         .ticker-wrapper {
             overflow: hidden;
             white-space: nowrap;
-            margin: 40px 0;
+            margin: 100px 0;
         }
 
         .ticker span {
             display: inline-block;
             padding-left: 10%;
-            animation: scrollText 25s linear infinite;
+            animation: scrollText 20s linear infinite;
             font-size: 26px;
             font-weight: bold;
         }
@@ -194,85 +198,102 @@
             font-size: 40px;
         }
 
-            html {
-                scroll-behavior: smooth;
-            }
+        #contact h2 {
+            color: white;
+        }
 
-            .navbar {
-                padding: 15px;
-                position: sticky;
-                top: 0;
-                z-index: 1000;
-            }
+        html {
+            scroll-behavior: smooth;
+        }
 
-            .nav-list {
-                list-style: none;
-                display: flex;
-                justify-content: center;
-                gap: 15px;
-                margin: 0;
-                padding: 0;
-            }
+        .navbar {
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
 
-           
+        .nav-list {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
 
-            .navbar {
-                padding: 15px;
-                position: sticky;
-                top: 0;
-                z-index: 1000;
-            }
+        .navbar {
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
 
-            .nav-list {
-                list-style: none;
-                display: flex;
-                justify-content: center;
-                gap: 15px;
-                margin: 0;
-                padding: 0;
-            }
+        .nav-list {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
 
-            .nav-btn {
-                padding: 10px 20px;
-                background: #444;
-                color: white;
-                text-decoration: none;
-                border-radius: 5px;
-                transition: 0.3s;
-            }
+        .nav-btn {
+            padding: 10px 20px;
+            background: #444;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
 
-            .nav-btn:hover {
-                background: #007bff;
-            }
+        .nav-btn:hover {
+            background: var(--primary);
+        }
 
-            section {
-                height: 100vh;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                background: black;
-                font-size: 30px;
-                margin-bottom: 100px;
-                color: white;
-            }
+        section {
+            margin: auto;
+            height: auto;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            text-align: left;
+            background: black;
+            font-size: 30px;
+            margin-bottom: 500px;
+            color: white;
+            padding: 80px 20px;
+            max-width: 1080px;
+        }
 
-                section h2 {
-                    color: #007bff;
-                    font-size: 6rem;
-                    font-weight: bold;
-                    font-display: fallback;
-                }
-                footer{
-                    text-align:center;
-                    padding:20px; 
-                    background:#111;
-                }
-               .bullet {
-                margin: 0 10px;
-                color: #007bff;   /* 🔵 blue color */
-                font-size: 20px;
-                } 
+        p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            color: var(--primary);
+            font-size: 6rem;
+            font-weight: bold;
+            font-display: fallback;
+            margin-bottom: 40px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+        }
+
+        .bullet {
+            margin: 0 10px;
+            color: var(--primary);
+            font-size: 20px;
+        }
+
+        address a {
+            color: var(--primary);
+        }
     </style>
 
 </head>
@@ -287,13 +308,13 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="./about.html"class="nav-btn">Shahzad Ali</a>
+                            <a href="about" class="nav-btn">Shahzad Ali</a>
                         </li>
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="./contact.html"class="nav-btn">Contact Me</a>
+                            <a href="contact" class="nav-btn">Contact Me</a>
                         </li>
                     </ul>
                 </div>
@@ -370,13 +391,25 @@
 
         <section id="about" class="section">
             <h2>About Me</h2>
-            <p>I’m a Semantic SEO Specialist focused on helping brands grow through structured, data-driven content strategies. My work goes beyond traditional SEO—I focus on understanding how people search, think, and connect with information.</p>
+            <p>I’m a Semantic SEO Specialist focused on helping brands grow through structured, data-driven content
+                strategies.</p>
 
-<p>Using semantic SEO frameworks, I build topical authority by organizing content into meaningful structures that both users and search engines can easily understand. I combine linguistic precision, search intent analysis, and technical SEO to create content that performs well and delivers real value.</p>
+            <p>work goes beyond traditional SEO—I focus on understanding how people search, think, and
+                connect with information.</p>
 
-<p>I’ve worked on improving website structures, developing topical maps, and creating detailed content briefs that help businesses scale their organic visibility. My approach is centered on building trust—ensuring content is not just optimized, but also relevant, clear, and useful.</p>
+            <p>Using semantic SEO frameworks, I build topical authority by organizing content into meaningful structures
+                that both users and search engines can easily understand. </p>
 
-<p>If you're looking to strengthen your content strategy and build long-term authority in your niche, I can help you achieve that through smart, semantic-driven SEO.</p>
+            <p>I combine linguistic precision, search intent analysis, and technical SEO to create content that performs
+                well and delivers real value.</p>
+
+            <p>I’ve worked on improving website structures, developing topical maps, and creating detailed content
+                briefs that help businesses scale their organic visibility.</p>
+            <p> My approach is centered on building
+                trust—ensuring content is not just optimized, but also relevant, clear, and useful.</p>
+
+            <p>If you're looking to strengthen your content strategy and build long-term authority in your niche, I can
+                help you achieve that through smart, semantic-driven SEO.</p>
             <!-- Rotating Line -->
             <div class="ticker-wrapper">
                 <div class="ticker">
@@ -449,12 +482,11 @@
 
             <address>
                 <p>
-                    <i class="fa-solid fa-envelope"></i>
+
                     Email: <a href="mailto:shahzad.semanticseo@gmail.com">shahzad.semanticseo@gmail.com</a>
                 </p>
 
                 <p>
-                    <i class="fa-solid fa-phone"></i>
                     Phone: <a href="tel:+923091144994">+92 309 114 4994</a>
                 </p>
             </address>
@@ -483,8 +515,8 @@
             });
         </script>
         <footer>
-    <p>© 2026 Shahzad Ali | Semantic SEO Expert</p>
-</footer>
+            <p>© 2026 Shahzad Ali | Semantic SEO Expert</p>
+        </footer>
     </main>
 
 </body>
